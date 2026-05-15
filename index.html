@@ -13,36 +13,41 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ffe5ec, #ffc2d1);
+            /* DIUBAH: Gradasi background menjadi hijau segar dan lembut */
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #4a4a4a;
+            color: #2e7d32;
             padding: 20px;
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             padding: 40px 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+            /* DIUBAH: Bayangan disesuaikan dengan tone hijau */
+            box-shadow: 0 10px 25px rgba(46, 125, 50, 0.15);
             text-align: center;
             max-width: 450px;
             width: 100%;
-            border: 2px solid #ffb3c6;
+            /* DIUBAH: Border menjadi hijau lembut */
+            border: 2px solid #a5d6a7;
             animation: fadeIn 1s ease-in-out;
         }
 
         .heart-icon {
             font-size: 50px;
-            color: #ff4d6d;
+            /* DIUBAH: Warna hati disesuaikan ke hijau emerald cerah */
+            color: #2ec4b6;
             animation: beat 1.2s infinite;
             margin-bottom: 20px;
         }
 
         h1 {
-            color: #ff4d6d;
+            /* DIUBAH: Warna judul menjadi hijau gelap yang tegas */
+            color: #1b5e20;
             font-size: 26px;
             margin-bottom: 15px;
         }
@@ -51,16 +56,19 @@
             font-size: 16px;
             line-height: 1.6;
             margin-bottom: 25px;
+            color: #37474f; /* Warna teks yang kontras dan nyaman dibaca */
         }
 
         .highlight {
             font-weight: bold;
-            color: #c9184a;
+            /* DIUBAH: Warna sorotan menjadi hijau emerald */
+            color: #2ec4b6;
         }
 
         .btn {
             display: inline-block;
-            background-color: #ff4d6d;
+            /* DIUBAH: Tombol menggunakan warna hijau emerald */
+            background-color: #2ec4b6;
             color: white;
             padding: 12px 30px;
             border: none;
@@ -70,13 +78,14 @@
             cursor: pointer;
             text-decoration: none;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+            box-shadow: 0 5px 15px rgba(46, 196, 182, 0.4);
         }
 
         .btn:hover {
-            background-color: #c9184a;
+            /* DIUBAH: Efek hover menjadi hijau yang sedikit lebih gelap */
+            background-color: #209e91;
             transform: translateY(-2px);
-            box-shadow: 0 7px 20px rgba(255, 77, 109, 0.6);
+            box-shadow: 0 7px 20px rgba(46, 196, 182, 0.6);
         }
 
         .btn:active {
@@ -98,7 +107,8 @@
             text-align: center;
             width: 80%;
             max-width: 350px;
-            border: 2px solid #ff4d6d;
+            /* DIUBAH: Border pop-up menyesuaikan warna utama */
+            border: 2px solid #2ec4b6;
         }
 
         .overlay {
@@ -127,7 +137,7 @@
 <body>
 
     <div class="card">
-        <div class="heart-icon">❤️</div>
+        <div class="heart-icon">💚</div>
         <h1>Cepat Sembuh, Sayang!</h1>
         <p>Halo <span class="highlight">Nurul Aini</span>, aku tahu rasanya sakit itu gak enak banget. Tapi demi aku (dan demi kamu juga), tolong jangan lupa <span class="highlight">minum obatnya sekarang</span>, ya? 💊✨</p>
         <p>Istirahat yang cukup, jangan begadang, dan biarkan obatnya bekerja biar kamu bisa ceria lagi. Aku tunggu senyum manismu kembali!</p>
@@ -136,7 +146,7 @@
 
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
-        <h3 style="color: #ff4d6d; margin-bottom: 10px;">Pintar Banget! 🌸</h3>
+        <h3 style="color: #1b5e20; margin-bottom: 10px;">Pintar Banget! 🌸</h3>
         <p>Makasih ya, Nurul Aini, udah nurut. Sekarang lanjut istirahat, ya. <i>I love you!</i> 💕</p>
         <button class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 14px;" onclick="tutupPesan()">Tutup</button>
     </div>
