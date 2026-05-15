@@ -1,2 +1,0 @@
-# minum-obat
-cepettt

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cepat Sembuh, Nurul Aini! ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffe5ec, #ffc2d1);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4a4a4a;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+            border: 2px solid #ffb3c6;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .heart-icon {
+            font-size: 50px;
+            color: #ff4d6d;
+            animation: beat 1.2s infinite;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff4d6d;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #c9184a;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff4d6d;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
+        }
+
+        .btn:hover {
+            background-color: #c9184a;
+            transform: translateY(-2px);
+            box-shadow: 0 7px 20px rgba(255, 77, 109, 0.6);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        /* Pop-up Pesan Sukses */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            z-index: 100;
+            text-align: center;
+            width: 80%;
+            max-width: 350px;
+            border: 2px solid #ff4d6d;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 99;
+        }
+
+        /* Animasi */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart-icon">❤️</div>
+        <h1>Cepat Sembuh, Sayang!</h1>
+        <p>Halo <span class="highlight">Nurul Aini</span>, aku tahu rasanya sakit itu gak enak banget. Tapi demi aku (dan demi kamu juga), tolong jangan lupa <span class="highlight">minum obatnya sekarang</span>, ya? 💊✨</p>
+        <p>Istirahat yang cukup, jangan begadang, dan biarkan obatnya bekerja biar kamu bisa ceria lagi. Aku tunggu senyum manismu kembali!</p>
+        <button class="btn" onclick="tampilkanPesan()">Aku Sudah Minum Obat! 🥰</button>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h3 style="color: #ff4d6d; margin-bottom: 10px;">Pintar Banget! 🌸</h3>
+        <p>Makasih ya, Nurul Aini, udah nurut. Sekarang lanjut istirahat, ya. <i>I love you!</i> 💕</p>
+        <button class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 14px;" onclick="tutupPesan()">Tutup</button>
+    </div>
+
+    <script>
+        function tampilkanPesan() {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function tutupPesan() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
